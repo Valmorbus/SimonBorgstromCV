@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_start"
+            android:icon="@drawable/ic_action_start"
+            android:title="Start" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_work"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Work" />
+        <item
+            android:id="@+id/nav_education"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Education" />
+        <item
+            android:id="@+id/nav_qualifications"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Qualifications" />
+
+    </group>
+
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/ic_menu_call"
+                android:title="Call" />
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_menu_email"
+                android:title="Email" />
+        </menu>
+    </item>
+
+</menu>
