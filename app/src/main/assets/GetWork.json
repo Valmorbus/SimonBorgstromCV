@@ -1,3 +1,48 @@
-[{"Id":1,"Name":"Trojor"},{"Id":11,"Name":"Byxor"},{"Id":21,"Name":"Skor"},{"Id":31,"Name":"Jackor"},{"Id":41,"Name":"Hatt"},
-{"Id":51,"Name":"Sandaler"},
-{"Id":441,"Name":"momomom"},{"Id":451,"Name":"jonaskebab"},{"Id":461,"Name":"Android Ã¤r kul"},{"Id":471,"Name":"hej serdar"}]
+[{"Title":"Sales manager | Uppsala Beer & whisky festival", "Time":"2014-11-01 – 2015-02-28","Description":"Sålde utställningsplatser 
+till bryggerier, destillerier och importörer av öl och whisky till Uppsalas första öl och whiskymässa"},
+{"Title":"Marketing manager | NightNode A B", "Time":"2013-12-01 – 2014-11-01","Description":"
+Arbetade med marknadsföring av datorspel i första hand. Ansvar för försäljning och marknadsföring
+i första hand på distributionsplattformen Steam. Uppdatering av blogg, hemsida, community
+management, support och liknande var huvudområden. Hjälpte även till i mindre skala med
+utveckling av diverse konceptappar och mindre webbaserade uppgifter."},
+
+{"Title":"Marketing internship | Dunham Entertainment Agency", "Time":"2013-09-01 – 2013-12-02",
+"Description":"Praktikarbete där jag arbetade med marknadsföring och public relations för datorspel och främst för
+mobilspel. Den största releasen under min tid där var Riddick: The Merc Files som släpptes till iOS
+och senare Android. Jag arbetade med marknadsundersökningar, skrev pressrelease och community
+management med mera."},
+
+{"Title":"Press och information | Welcome Uppsala", "Time":"2012-05-01 – 2012-08-31",
+"Description":"Arbetat på stora konserter som Def Leppard och Patti Smith vid information/press monter.
+Presskontakt och kundtjänst var några av arbetsuppgifterna."},
+
+{"Title":"Biträdande Taketchef | Västmanlands-Dala nation", "Time":"2014-11-01 – 2015-02-28",
+"Description":"Var biträdande Taketchef och ansvarade tillsammans med Taketchefen för nationens
+sommarverksamhet under perioden maj-augusti. Denna verksamhet innebar framför allt att driva
+nationens sommarrestaurang Taket. Personalansvar för 70-talet anställda samt inköp,
+uthyrningar, marknadsföring, information och kommunikation. Taket var öppet varje kväll under
+sommaren och vi omsatte 2,6 miljoner kronor."},
+
+{"Title":"Uthyrningssäljare | Västmanlands-Dala nation", "Time":"2011-06-01 – 2012-01-01",
+"Description":"Ett uppdrag som innebär att sälja in nationen för potentiella kunder gällande nationens
+uthyrningsverksamhet. Till stor del är det att aktivt söka kunder samt att ha kontakt med de
+kunder vi redan har och att finnas tillgänglig som kontakt för kunder före, under och efter
+arrangemangen.
+I detta uppdrag lyckades jag passera det satta ekonomiska målet med 200 %, med en omsättning
+på 2,8 miljoner. Detta innebar att resultatet för bokslutet för första gången på flera år hamnade på
+plus."},
+
+{"Title":"Barmästare | Västmanlands-Dala nation", "Time":"2011-01-01 – 2011-06-01",
+"Description":"En befattning som innebär ett ansvar för försäljning och lagerhållning av sprit, vin, öl, läsk, tobak
+och emballage sker enligt de ekonomiska ramar som fastställts av nationens styrelse och
+arbetsutskott. Utöver detta omfattade arbetet även personalrekrytering och lager- samt
+ekonomisk redovisning. Ansvar för fem barer, tio anställda per arrangemang och middagar med
+upp till 450 gäster och konserter med över 900 besökare."},
+
+{"Title":"Redaktionsassistent | Politik en.se", "Time":"2008-08-01 – 2009-08-01",
+"Description":"Arbetade på webbtidningen Politiken.se, främst med InDesign, Excel och Word. Huvuduppgifter
+var anpassning av dokument för databasen samt redigering av artiklar m.m."}],
+
+{"Title":"Säljare | Boudi", "Time":"2004-08-01 – 2005-03-01",
+"Description":"Arbetade som klädförsäljare i en klädbutik i London. Det var enbart märkeskläder av det
+exklusivare slaget, exempelvis Armani, Versace och Hugo Boss"}]

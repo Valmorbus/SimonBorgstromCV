@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    String qualifier = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,6 @@ public class DetailActivity extends AppCompatActivity
         setContentView(R.layout.activity_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -34,34 +34,38 @@ public class DetailActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        int id=0;
-        String title ="";
-        String qualifier = getIntent().getStringExtra("qualifier");
-        switch(qualifier){
+        String timeString = "";
+        String title = "";
+        String descript = "";
+        qualifier = getIntent().getStringExtra("qualifier");
+        switch (qualifier) {
             case "work":
-                id = getIntent().getIntExtra("workId", 0);
+                timeString = getIntent().getStringExtra("workTime");
                 title = getIntent().getStringExtra("workTitle");
+                descript = getIntent().getStringExtra("workdescription");
                 break;
             case "education":
-                id = getIntent().getIntExtra("educationId", 0);
+                timeString = getIntent().getStringExtra("educationTime");
                 title = getIntent().getStringExtra("educationTitle");
+                descript = getIntent().getStringExtra("educationDescription");
                 break;
-            case "qualification" :
-                id = getIntent().getIntExtra("qualificationId", 0);
+            case "qualification":
+                timeString = getIntent().getStringExtra("qualificationId");
                 title = getIntent().getStringExtra("qualificationTitle");
                 break;
-            default : id = 0;
+            default:
+                timeString = "cant find";
                 title = "cant find";
         }
         TextView time = (TextView) findViewById(R.id.detailsTime);
-        time.setText(String.valueOf(id));
+        time.setText(timeString);
         TextView head = (TextView) findViewById(R.id.detailsHeader);
         head.setText(title);
         TextView description = (TextView) findViewById(R.id.detailsDescription);
-        description.setText(title);
+        description.setText(descript);
 
 
-}
+    }
 
 
     @Override
@@ -70,6 +74,25 @@ public class DetailActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
+            Intent returnIntent;
+            switch (qualifier) {
+                case "work":
+                    returnIntent = new Intent(this, WorkActivity.class);
+                    setResult(RESULT_OK, returnIntent);
+                    finish();
+                    //break;
+                case "education":
+                    returnIntent = new Intent(this, EducationActivity.class);
+                    setResult(RESULT_OK, returnIntent);
+                    finish();
+                    //break;
+                case "qualification":
+                    returnIntent = new Intent(this, QualificationsActivity.class);
+                    setResult(RESULT_OK, returnIntent);
+                    finish();
+                    //break;
+            }
+
             super.onBackPressed();
         }
     }
@@ -117,7 +140,11 @@ public class DetailActivity extends AppCompatActivity
         } else if (id == R.id.nav_qualifications) {
             Intent i = new Intent(this, QualificationsActivity.class);
             startActivity(i);
-        }else if (id == R.id.nav_call) {
+        } else if (id == R.id.nav_git) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.github.com/Valmorbus"));
+            startActivity(browserIntent);
+
+        } else if (id == R.id.nav_call) {
             Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
             phoneIntent.setData(Uri.parse("tel:0705566544"));
             startActivity(phoneIntent);
@@ -125,10 +152,10 @@ public class DetailActivity extends AppCompatActivity
         } else if (id == R.id.nav_email) {
             Intent sendMail = new Intent(Intent.ACTION_SEND);
             sendMail.setType("text/mail");
-            sendMail.putExtra(Intent.EXTRA_EMAIL, new String[] {"borgstrom.simon@gmail.com"});
+            sendMail.putExtra(Intent.EXTRA_EMAIL, new String[]{"borgstrom.simon@gmail.com"});
             sendMail.putExtra(Intent.EXTRA_SUBJECT, "Mitt subject");
             sendMail.putExtra(Intent.EXTRA_TEXT, "Hej Simon");
-            startActivity(Intent.createChooser(sendMail,"Välj epostprogram:"));
+            startActivity(Intent.createChooser(sendMail, "Välj epostprogram:"));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

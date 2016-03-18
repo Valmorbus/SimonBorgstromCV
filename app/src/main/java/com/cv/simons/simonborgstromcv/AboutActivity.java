@@ -4,9 +4,6 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -51,6 +49,9 @@ public class AboutActivity extends AppCompatActivity
         } catch (IOException e) {
             e.printStackTrace();
         }
+        TextView about = (TextView) findViewById(R.id.textViewAbout);
+        assert about != null;
+        about.setText(loadTXTFromAsset());
     }
 
     @Override
@@ -106,6 +107,10 @@ public class AboutActivity extends AppCompatActivity
         }else if (id == R.id.nav_qualifications) {
             Intent i = new Intent(this, QualificationsActivity.class);
             startActivity(i);
+        }else if (id == R.id.nav_git) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.github.com/Valmorbus"));
+            startActivity(browserIntent);
+
         }else if (id == R.id.nav_call) {
             Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
             phoneIntent.setData(Uri.parse("tel:0705566544"));
@@ -123,5 +128,22 @@ public class AboutActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private String loadTXTFromAsset() {
+        String txt = null;
+        try {
+            InputStream is = this.getAssets().open("About.txt");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            txt = new String(buffer, "UTF-8");
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return txt;
     }
 }

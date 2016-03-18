@@ -5,24 +5,30 @@ package com.cv.simons.simonborgstromcv;
  */
 public class Education {
 
-    private int id;
-    private String namn;
+    private String time;
+    private String name;
+    private String description;
 
-    public Education(int id, String namn) {
-        this.id = id;
-        this.namn = namn;
+    public Education(String time, String namn, String description) {
+        this.time = time;
+        this.name = namn;
+        this.description = description;
     }
 
-    public int getId() {
-        return id;
+    public String getTime() {
+        return time;
     }
     public String getName() {
-        return namn;
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     @Override
     public String toString() {
-        return namn;
+        return name;
     }
 
 

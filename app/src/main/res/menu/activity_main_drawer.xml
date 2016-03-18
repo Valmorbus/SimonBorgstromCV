@@ -8,26 +8,30 @@
             android:title="Start" />
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_menu_about"
             android:title="About" />
 
         <item
             android:id="@+id/nav_work"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_menu_work"
             android:title="Work" />
         <item
             android:id="@+id/nav_education"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_menu_education"
             android:title="Education" />
         <item
             android:id="@+id/nav_qualifications"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_menu_info"
             android:title="Qualifications" />
 
     </group>
 
     <item android:title="Contact">
         <menu>
+            <item
+                android:id="@+id/nav_git"
+                android:icon="@drawable/ic_github"
+                android:title="Github" />
             <item
                 android:id="@+id/nav_call"
                 android:icon="@drawable/ic_menu_call"

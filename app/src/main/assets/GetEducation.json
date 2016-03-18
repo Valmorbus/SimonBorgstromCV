@@ -1,2 +1,7 @@
 [
-{"Id":441,"Name":"momomom"},{"Id":451,"Name":"jonaskebab"},{"Id":461,"Name":"Android Ã¤r kul"},{"Id":471,"Name":"hej serdar"}]
+{"Time":"2015-2017","Name":"Nackademin","Description":"Studerar Javaprogrammering på Nackademin i Stockholm. Utbildningen innefattar Java SE,
+Java EE, CSS, mySQL, JavaScript med mera"},
+{"Time":"2009-2013","Name":"Uppsala universitet","Description":"Socialpsykologi 90hp\n\nMedia och kommunikationsvetenskap 60hp\n\nDatorer & programmering 10hp, 2014\n\nObjektorienterad programmering med Java 10hp, 2015"},
+{"Time":"2006-2008","Name":"Södertörns högskola","Description":"Religionsvetenskap 90hp"},
+
+]

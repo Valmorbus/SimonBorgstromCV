@@ -53,7 +53,7 @@ public class WorkActivity extends AppCompatActivity
 
             for (int i = 0; i < m_jArry.length(); i++) {
                 JSONObject jo_inside = m_jArry.getJSONObject(i);
-                workList.add(new Work(jo_inside.getInt("Id"), jo_inside.getString("Name")));
+                workList.add(new Work(jo_inside.getString("Title"), jo_inside.getString("Time"), jo_inside.getString("Description")));
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -70,8 +70,9 @@ public class WorkActivity extends AppCompatActivity
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(WorkActivity.this, DetailActivity.class);
                 i.putExtra("qualifier","work");
-                i.putExtra("workId", workList.get(position).getId());
-                i.putExtra("workTitle", workList.get(position).getName());
+                i.putExtra("workTime", workList.get(position).getTime());
+                i.putExtra("workTitle", workList.get(position).getTitle());
+                i.putExtra("workdescription", workList.get(position).getDescription());
                 startActivity(i);
             }
         });
@@ -132,6 +133,10 @@ public class WorkActivity extends AppCompatActivity
         } else if (id == R.id.nav_qualifications) {
             Intent i = new Intent(this, QualificationsActivity.class);
             startActivity(i);
+        }else if (id == R.id.nav_git) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.github.com/Valmorbus"));
+            startActivity(browserIntent);
+
         }else if (id == R.id.nav_call) {
             Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
             phoneIntent.setData(Uri.parse("tel:0705566544"));

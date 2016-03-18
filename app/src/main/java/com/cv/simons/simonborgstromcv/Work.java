@@ -4,24 +4,30 @@ package com.cv.simons.simonborgstromcv;
  * Created by Simons on 17/03/2016.
  */
 public class Work {
-    private int id;
-    private String namn;
+    private String time;
+    private String title;
+    private String description;
 
-    public Work(int id, String namn) {
-        this.id = id;
-        this.namn = namn;
+        public Work( String title,String time, String description) {
+        this.time = time;
+        this.title = title;
+        this.description = description;
     }
 
-    public int getId() {
-        return id;
+    public String getTime() {
+        return time;
     }
-    public String getName() {
-        return namn;
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     @Override
     public String toString() {
-        return namn;
+        return title;
     }
 
 

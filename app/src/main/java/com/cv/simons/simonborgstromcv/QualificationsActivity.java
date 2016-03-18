@@ -67,11 +67,11 @@ public class QualificationsActivity extends AppCompatActivity
         qListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(QualificationsActivity.this, DetailActivity.class);  
+          /*      Intent i = new Intent(QualificationsActivity.this, DetailActivity.class);
                 i.putExtra("qualifier","qualification");
                 i.putExtra("qualificationId", qualificationsList.get(position).getId());
                 i.putExtra("qualificationTitle", qualificationsList.get(position).getName());
-                startActivity(i);
+                startActivity(i);*/
             }
         });
     }
@@ -127,6 +127,10 @@ public class QualificationsActivity extends AppCompatActivity
             Intent i = new Intent(this, EducationActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_qualifications) {
+
+        }else if (id == R.id.nav_git) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.github.com/Valmorbus"));
+            startActivity(browserIntent);
 
         }else if (id == R.id.nav_call) {
             Intent phoneIntent = new Intent(Intent.ACTION_DIAL);

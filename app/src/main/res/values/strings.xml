@@ -5,17 +5,19 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_om">omActivity</string>
-    <string name="title_activity_about">AboutActivity</string>
-    <string name="title_activity_work">WorkActivity</string>
-    <string name="title_activity_education">EducationActivity</string>
-    <string name="aboutDescription">Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan Massa TExt på about Sidan</string>
+    <string name="title_activity_about">About me</string>
+    <string name="title_activity_work">Work experience</string>
+    <string name="title_activity_education">My education</string>
     <string name="AboutHead">Om Mig</string>
     <string name="startHead">Välkommen till mitt CV</string>
     <string name="startMessage">Tack för att du tar dig tid att titta igenom mina tidigare arbetserfarenheter och utbildningar. Förhoppningsvis kanske du tycker att jag skulle passa på just din arbetsplats.</string>
     <string name="startGreetings">Hälsningar/</string>
     <string name="startName">Simon Borgström</string>
-    <string name="title_activity_work_detail">WorkDetailActivity</string>
-    <string name="title_activity_qualifications">QualificationsActivity</string>
+    <string name="title_activity_work_detail">Work Details</string>
+    <string name="title_activity_qualifications">My qualifications</string>
     <string name="navHeader">Simon Borgström CV</string>
+    <string name="myEducation">My Education</string>
+    <string name="myQualifications">My qualifications</string>
+    <string name="workExperience">Work experience</string>
+    <string name="aboutDescription2">After working in marketing and sales I decided that I wanted to do something more creative, so I began studying Java programming, which is what I\'m currently doing at Nackademin in Stockholm.</string>
 </resources>
